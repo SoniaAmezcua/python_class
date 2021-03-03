@@ -33,7 +33,7 @@ def obtener_generacion():
     
 def obtener_edad(persona_cumplio_anios):
     #Método para obtener la edad de una persona 
-    if anio_nacimiento <= anio_actual and persona_cumplio_anios == True:
+    if anio_nacimiento <= anio_actual and persona_cumplio_anios:
         edad = anio_actual - anio_nacimiento
     elif anio_nacimiento == anio_actual:
         edad = 0
@@ -44,8 +44,8 @@ def obtener_edad(persona_cumplio_anios):
 
 def validar_datos():
     valido = False
-    if isinstance(mes_nacimiento, int) == True and isinstance(dia_nacimiento, int) == True\
-        and isinstance(anio_nacimiento, int) == True and mes_nacimiento in (meses) and \
+    if isinstance(mes_nacimiento, int)  and isinstance(dia_nacimiento, int) \
+        and isinstance(anio_nacimiento, int)  and mes_nacimiento in (meses) and \
             anio_nacimiento <= anio_actual:
         #Validar que el día sea correcto de acuerdo al año y mes de nacimiento
         ultimo_dia_mes = monthrange(anio_nacimiento, mes_nacimiento)[1] 
@@ -54,7 +54,7 @@ def validar_datos():
     return valido
 
 
-if validar_datos() == True:
+if validar_datos():
     cumplio_anios= False
     #Ya cumplio años en lo que va del año?
     if mes_nacimiento <= mes_actual and dia_nacimiento <= dia_actual:
@@ -69,8 +69,4 @@ if validar_datos() == True:
     print("Genración: {}".format(obtener_generacion()))
 else:
     print("Datos incorrectos")
-
-  
-
-
 
