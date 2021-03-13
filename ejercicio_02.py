@@ -84,11 +84,11 @@ def informacion_equipo_provincias(data_provincias, data_cantidad_jugadores):
         region = "Zona Centro con {} jugadores".format(zona_centro)
     elif zona_sur > zona_norte and zona_sur > zona_centro:
         region = "Zona Sur con {} jugadores".format(zona_sur)
-    elif zona_norte and  zona_centro > zona_sur:
+    elif zona_norte == zona_centro and zona_norte > zona_sur:
         region = "Zona Norte con {} y Zona Centro con {} jugadores".format(zona_norte, zona_centro)
-    elif zona_norte and  zona_sur > zona_centro:
+    elif zona_norte ==  zona_sur and zona_norte > zona_centro:
         region = "Zona Norte con {} y Zona Sur con {} jugadores".format(zona_norte, zona_sur)
-    elif zona_centro and  zona_sur > zona_norte:
+    elif zona_centro ==  zona_sur and zona_centro > zona_norte:
         region = "Zona Centro con {} y Zona Sur con {} jugadores".format(zona_centro, zona_sur)
     else:
         region = "Todos los regiones tienen los mismos jugadores"
