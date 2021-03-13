@@ -1,3 +1,24 @@
+''' 
+    Ejercicio 1
+
+    Construir un Script que permita generar una fila de 'Sudoku', es decir, una fila de 9 valores
+    con numeros del 1 al 9 y que ninguno de los valores se repitan y mostrar la fila.
+
+    Para comprobar que la fila esta bien construida, deberan calcular la sumatoria de la fila y debe dar como resultado 45
+
+    Al igual que en Sudoku, la fila se segmenta en 3 partes, por lo que es necesario calcular la sumatoria de cada bloque
+    , mostrarlos e indicar que bloque es el mayor (A, B o C). en el caso de que existen bloque con igual valor, debera mostrar
+    cuales son los bloques mayores. Y si todos son iguales, indicar el siguiente mensaje
+    'Todos los bloques son iguales'.
+
+    * Este script se puede resolver con las funciones y metodos vistas en clase, no es necesario implementar algo fuera de la misma
+    y en el caso de realizarlo, debera escribir un comentario de la justificacion.
+
+    * El objetivo de este ejercicio es evaluar los conocimientos adquiridos, como a su vez las buenas practicas y la optimizacion
+    de la solucion, por lo que todos estos factores seran considerados para su evaluacion.
+
+'''
+
 import random
 #import numpy as np
 

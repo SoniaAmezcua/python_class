@@ -1,5 +1,4 @@
 ''' 
-    1303
     Ejercicio 2
 
     Construir un Script que dado un archivo de texto, que al leerse y procesarce se obtiene una variable data 
