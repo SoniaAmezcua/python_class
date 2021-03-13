@@ -99,11 +99,11 @@ def informacion_equipo_provincias(data_provincias, data_cantidad_jugadores):
 
 star_craft_argentina= informacion_equipo_provincias(provincias, cantidad_jugadores)
 
-print("Total de jugadores existentes en la Argentina {}".format(star_craft_argentina[0]))
+print("Total de jugadores existentes en la Argentina: {}".format(star_craft_argentina[0]))
 print("Provincia con mayor cantidad de jugadores es: {}".format(star_craft_argentina[1]))
-print ("Total de jugadores Zona Norte {}".format(star_craft_argentina[3]))
-print ("Total de jugadores Zona Centro {}".format(star_craft_argentina[4]))
-print ("Total de jugadores Zona Sur {}".format(star_craft_argentina[5]))
+print ("Total de jugadores Zona Norte: {}".format(star_craft_argentina[3]))
+print ("Total de jugadores Zona Centro: {}".format(star_craft_argentina[4]))
+print ("Total de jugadores Zona Sur: {}".format(star_craft_argentina[5]))
 
 #agregar a la lista nuevo registro
 provincias.append(nueva_ciudad)
@@ -111,10 +111,10 @@ cantidad_jugadores.append(jugadores_rio_negro)
 
 star_craft_argentina = informacion_equipo_provincias(provincias, cantidad_jugadores)
 print("\nJugadores con Rio negro")
-print("Total de jugadores existentes en la Argentina {}".format(star_craft_argentina[0]))
+print("Total de jugadores existentes en la Argentina: {}".format(star_craft_argentina[0]))
 print("Provincia con menor cantidad de jugadores es: {}".format(star_craft_argentina[2]))
 print("Regiones con mayor cantidad de jugadores: {}".format(star_craft_argentina[6]))
 
-print ("Total de jugadores Zona Norte {}".format(star_craft_argentina[3]))
-print ("Total de jugadores Zona Centro {}".format(star_craft_argentina[4]))
-print ("Total de jugadores Zona Sur {}".format(star_craft_argentina[5]))
+print ("Total de jugadores Zona Norte: {}".format(star_craft_argentina[3]))
+print ("Total de jugadores Zona Centro: {}".format(star_craft_argentina[4]))
+print ("Total de jugadores Zona Sur: {}".format(star_craft_argentina[5]))

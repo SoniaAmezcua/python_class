@@ -41,11 +41,11 @@ elif sum_bloque_b > sum_bloque_a and sum_bloque_b > sum_bloque_c:
     print("Bloque B es mayor")
 elif sum_bloque_c > sum_bloque_a and sum_bloque_c > sum_bloque_b:
     print("Bloque C es mayor")
-elif sum_bloque_a and  sum_bloque_b > sum_bloque_c :
+elif sum_bloque_a and  sum_bloque_b > sum_bloque_c:
     print("Bloque A y B son mayores")
-elif sum_bloque_a and  sum_bloque_c > sum_bloque_b :
+elif sum_bloque_a and  sum_bloque_c > sum_bloque_b:
     print("Bloque A y C son mayores")
-elif sum_bloque_b and  sum_bloque_c > sum_bloque_a :
+elif sum_bloque_b and  sum_bloque_c > sum_bloque_a:
     print("Bloque B y C son mayores")
 else:
     print("Todos los bloques son iguales")
