@@ -32,6 +32,7 @@
 #     'contactos' : []
 # }
 
+archivo = 'my_archivo.txt'
 opcion = int(input('''Ingrese una opcion (1 para guardar un contacto, 2 para visualizar agenda, 
 3 para buscar un contacto, 4 para eliminar un contacto, 0 para salir)\n'''))
 
@@ -41,19 +42,19 @@ while opcion != 0:
         nombre = input('Ingrese nombre del contacto\n')
         numero_telefonico = input('Ingrese numero de telefono del contacto\n')
         email = input('Ingrese email del contacto\n')
-        file = open('my_archivo.txt', 'a')
+        file = open(archivo, 'a')
         file.write('{},{},{}\n'.format(nombre, numero_telefonico, email))
         file.close()               
     elif opcion == 2:
         print('---- Listar Agenda ----')
-        file = open('my_archivo.txt', 'r')
+        file = open(archivo, 'r')
         for  line in file.readlines():
             print(line[:-1])
         file.close() 
     elif opcion == 3:
         print('---- Buscar Contacto ----')
         nombre = input('Ingrese nombre del contacto\n')
-        file = open('my_archivo.txt', 'r')
+        file = open(archivo, 'r')
         find = False
         for  contacto in file.readlines():
             contacto_data = contacto.split(',')
@@ -70,12 +71,12 @@ while opcion != 0:
         print('---- Eliminar Contacto ----')
         nombre = input('Ingrese nombre del contacto\n')
         # Abrimos el archivo solo de lectura
-        file = open('my_archivo.txt', 'r')
+        file = open(archivo, 'r')
         # Creamos una lista con cada una de sus lineas
         contactos_data = file.readlines()
         file.close()
         # Abrimos el archivo en modo sobreescritura
-        file = open('my_archivo.txt', 'w')
+        file = open(archivo, 'w')
         #Recorremos la lista
         for contacto in contactos_data:
             contacto_data = contacto.split(',') 
