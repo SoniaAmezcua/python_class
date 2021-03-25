@@ -61,7 +61,7 @@ while opcion != 0:
             if nombre in contacto_data[0]:
                 print('---- Contacto ----')
                 print('Nombre: {}'.format(contacto_data[0]))
-                print('Numero:{} Email:{}'.format(contacto_data[1]))
+                print('Numero:{}'.format(contacto_data[1]))
                 print('Email:{}'.format(contacto_data[2]))
                 find = True
         if not find:
